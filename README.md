@@ -1,2 +1,3 @@
-# ashvintest.github.io
-Landing Page for my website
+# Ashvin Motye
+My personal website.
+Coming soon...
