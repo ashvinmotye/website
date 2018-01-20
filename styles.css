@@ -15,11 +15,6 @@ body {
 	position: relative;
 }
 
-header, 
-footer {
-	text-align: center;
-}
-
 img {
 	width: 150px;
 	border-radius: 100%;
@@ -53,18 +48,11 @@ h2 + p {
 }
 
 header {
+	text-align: center;
 	position: relative;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-}
-
-footer {
-	position: absolute;
-	bottom: 10px;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 100%;
 }
 
 ul {
@@ -86,7 +74,10 @@ svg {
 	transition: color 0.2s ease;
 }
 
-svg:hover,
-div#blog a:hover {
+svg:hover {
 	color: #c80e25;
+}
+
+.footer {
+	margin-top: 50px;
 }
