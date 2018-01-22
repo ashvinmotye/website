@@ -81,3 +81,10 @@ svg:hover {
 .footer {
 	margin-top: 50px;
 }
+
+
+@media (max-width: 767px) {
+	ul li a {
+		font-size: 1.7em;
+	}
+}
