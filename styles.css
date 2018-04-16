@@ -11,20 +11,21 @@ body {
 }
 
 body {
-	background-color: #2e3138;
+	background-color: #03a9f4;
 	position: relative;
 }
 
 img {
 	width: 150px;
-	border-radius: 100%;
+	border-radius: 10px;
+	border: 3px solid white;
 }
 
 h1,
 h2,
 p,
 a {
-	color: #03a9f4;
+	color: #ffffff;
 }
 
 h1 {
@@ -75,13 +76,13 @@ ul li a {
 
 svg,
 span.link {
-	color: #03a9f4;
+	color: #ffffff;
 	transition: color 0.2s ease;
 }
 
 svg:hover,
 svg:hover+span.link {
-	color: #d5ecff;
+	color: #003d70;
 }
 
 .footer {
