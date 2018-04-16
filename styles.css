@@ -123,6 +123,44 @@ ul li a span.link {
   font-weight: lighter;
 }
 
+.thanks h1,
+.thanks h2,
+.thanks p,
+.thanks a {
+	color: #ffffff;
+}
+
+.thanks h1 {
+	font-size: 3.5em;
+	font-weight: lighter;
+}
+
+.thanks h2 {
+	font-weight: lighter;
+	padding: 0 10px;
+}
+
+.thanks a {
+	outline: none;
+}
+
+.thanks h1+p {
+	font-size: 1.1em;
+	margin-bottom: 40px;
+}
+
+.thanks h2+p {
+	margin-top: 10px;
+}
+
+header.thanks {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 @media (max-width: 900px) {
   .row {
     float: none;
