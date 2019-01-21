@@ -10,7 +10,7 @@ body {
 }
 
 body {
-  background-color: #010101;
+  background-color: #110e17;
   border-top: 3px solid #2f2f2f;
 }
 
@@ -37,10 +37,14 @@ a {
   margin-right: 30px;
   margin-top: 12px;
   transition: all 0.13s ease;
+  
+  padding: 3px 6px;
+  border-radius: 6px;
 }
 
 a:hover {
-  color: #424242;
+  background-image: linear-gradient(to right, #F27121cc, #E94057cc, #8A2387cc);
+  color: #ffffff;
 }
 
 .container {
