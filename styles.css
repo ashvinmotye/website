@@ -12,6 +12,7 @@ body {
 body {
   background-color: #110e17;
   border-top: 3px solid #2f2f2f;
+  overflow: hidden;
 }
 
 .gradient {
