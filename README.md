@@ -1,3 +1,0 @@
-# Ashvin Motye
-My personal website.
-Coming soon...

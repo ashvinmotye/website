@@ -1,0 +1,28 @@
+{
+  "name": "ashvin-motye-website",
+  "version": "1.0.0",
+  "description": "Ashvin Motye website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashvinmotye/ashvinmotye.github.io.git"
+  },
+  "keywords": [
+    "ashvin",
+    "motye"
+  ],
+  "author": "Ashvin Motye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashvinmotye/ashvinmotye.github.io/issues"
+  },
+  "homepage": "https://github.com/ashvinmotye/ashvinmotye.github.io#readme",
+  "dependencies": {
+    "gatsby": "^2.20.12",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
