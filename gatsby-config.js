@@ -20,15 +20,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        options: {
-          name: `Ashvin Motye`,
-          short_name: `Ashvin Motye`,
-          start_url: `/`,
-          background_color: `#f7f0eb`,
-          theme_color: `#a2466c`,
-          display: `standalone`,
-          icon: `src/images/icon.png`,
-        },
+        name: `Ashvin Motye`,
+        short_name: `Ashvin Motye`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
