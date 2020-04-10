@@ -20,12 +20,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-react-bootstrap`,
-        short_name: `react-bootstrap`,
-        start_url: `/`,
-        background_color: `#20232a`,
-        theme_color: `#20232a`,
-        display: `minimal-ui`,
+        options: {
+          name: `Ashvin Motye`,
+          short_name: `Ashvin Motye`,
+          start_url: `/`,
+          background_color: `#f7f0eb`,
+          theme_color: `#a2466c`,
+          display: `standalone`,
+          icon: `src/images/icon.png`,
+        },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
