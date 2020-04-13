@@ -10,8 +10,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 import { Container, Row, Col } from "react-bootstrap"
 
-import Header from "./header"
-import Navbar from "./navBar"
+import Menu from "./menu"
 
 const Layout = ({ children, pageInfo }) => (
   <StaticQuery
@@ -27,29 +26,20 @@ const Layout = ({ children, pageInfo }) => (
     render={data => (
       <>
         <Container fluid className="px-0 main">
-          <Row noGutters className="justify-content-center">
-            <Col>
-              <Header siteTitle={data.site.siteMetadata.title} />
-            </Col>
-          </Row>
-          <Navbar pageInfo={pageInfo} />
+          <Menu pageInfo={pageInfo} />
           <Row noGutters>
             <Col>
-              <Container className="mt-5">
+              <Container>
                 <main>{children}</main>
               </Container>
             </Col>
           </Row>
         </Container>
-        <Container fluid className="px-0">
+        <Container fluid className="px-0 sr-only">
           <Row noGutters>
             <Col className="footer-col">
               <footer>
-                <span>
-                  © {new Date().getFullYear()}, Built with
-                  {` `}
-                  <a href="https://www.gatsbyjs.org">Gatsby</a>
-                </span>
+                <span>© {new Date().getFullYear()} Ashvin Motye</span>
               </footer>
             </Col>
           </Row>
