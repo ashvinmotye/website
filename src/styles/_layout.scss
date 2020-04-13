@@ -1,6 +1,6 @@
 div.main {
   min-height: 100vh;
-  padding-bottom: 60px;
+  font-family: "Noto Sans", sans-serif;
 }
 
 div.full-height {
@@ -25,8 +25,8 @@ a.link-no-style {
     margin-top: -60px;
     height: 60px;
     clear: both;
-    background-color: $color-primary;
-    color: white;
+    background-color: $white;
+    color: $gray;
     justify-content: center;
     width: 100%;
 
