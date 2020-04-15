@@ -3,11 +3,25 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const NotFoundPage = () => (
+import { GiBattleship } from "react-icons/gi"
+
+const NotFoundPage = ({ location }) => (
   <Layout>
     <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <div className="text-center">
+      <div className="mb-3">
+        <h1 className="mb-2">Currently migrating...</h1>
+        <span class="ship">
+          <GiBattleship />
+        </span>
+      </div>
+      <p className="mb-0">Try this</p>
+      <p>
+        <a href={`https://ashvinmotye.github.io${location.pathname}/`}>
+          {`https://ashvinmotye.github.io${location.pathname}/`}
+        </a>
+      </p>
+    </div>
   </Layout>
 )
 
