@@ -1,0 +1,18 @@
+.ship {
+  font-size: 7em;
+  color: rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translate3d(0, 0, 12px) rotate(-2deg);
+  }
+  50% {
+    transform: translate3d(0, 10px, 12px) rotate(2deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 12px) rotate(-2deg);
+  }
+}
