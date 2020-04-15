@@ -9,7 +9,10 @@ const NotFoundPage = ({ location }) => {
   let path = useRef(location.pathname)
 
   useEffect(() => {
-    path.current = location.pathname
+    path.current =
+      location.pathname.slice(-1) === "/"
+        ? location.pathname
+        : location.pathname + "/"
   })
 
   return (
@@ -24,8 +27,8 @@ const NotFoundPage = ({ location }) => {
         </div>
         <p className="mb-0">Try this</p>
         <p>
-          <a href={`https://ashvinmotye.github.io${path}/`}>
-            {`https://ashvinmotye.github.io${path}/`}
+          <a href={`https://ashvinmotye.github.io${path.current}`}>
+            {`https://ashvinmotye.github.io${path.current}`}
           </a>
         </p>
       </div>
