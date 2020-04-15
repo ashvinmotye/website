@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -6,7 +6,12 @@ import SEO from "../components/seo"
 import { GiBattleship } from "react-icons/gi"
 
 const NotFoundPage = ({ location }) => {
-  console.log(location)
+  let path = useRef(location.pathname)
+
+  useEffect(() => {
+    path.current = location.pathname
+  })
+
   return (
     <Layout>
       <SEO title="404: Not found" />
@@ -19,8 +24,8 @@ const NotFoundPage = ({ location }) => {
         </div>
         <p className="mb-0">Try this</p>
         <p>
-          <a href={`https://ashvinmotye.github.io${location.pathname}/`}>
-            {`https://ashvinmotye.github.io${location.pathname}/`}
+          <a href={`https://ashvinmotye.github.io${path}/`}>
+            {`https://ashvinmotye.github.io${path}/`}
           </a>
         </p>
       </div>
