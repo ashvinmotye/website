@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   pathPrefix: "/",
   siteMetadata: {
@@ -34,6 +38,17 @@ module.exports = {
       options: {
         fonts: [`noto sans`],
         display: "swap",
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTA_SPACE_ID,
+        accessToken: process.env.CONTENTA_ACCESS_TOKEN,
+        downloadLocal: true,
+        richText: {
+          resolveFieldLocales: true,
+        },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
