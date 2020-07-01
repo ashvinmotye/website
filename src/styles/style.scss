@@ -1,7 +1,5 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "variables";
+@import "./config/variables";
+@import "./config/colors";
 
-@import "layout";
-@import "navbar";
-@import "colors";
-@import "404";
+@import "./components/common/404";
