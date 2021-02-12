@@ -1,8 +1,18 @@
+body,
+nav {
+  background-color: var(--primary);
+}
+
 h1,
 .h1 {
-  color: $gray;
+  color: var(--secondary);
 }
 
 p {
-  color: $body;
+  color: var(--text);
+}
+
+// Home social icons
+.links a {
+  color: var(--text);
 }

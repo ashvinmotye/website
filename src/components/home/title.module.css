@@ -25,7 +25,6 @@
 }
 
 .links a {
-  color: #424242;
   display: flex;
   align-items: center;
   position: relative;
@@ -48,59 +47,4 @@
 
 .links a:hover:after {
   transform: scale(1);
-}
-
-.landing_soon {
-  min-height: 50%;
-  box-shadow: 15px 15px 30px #dbdbdb, -15px -15px 30px #ffffff;
-  border-radius: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-}
-
-@media screen and (max-width: 768px) {
-  .landing_soon {
-    min-height: 100%;
-  }
-}
-
-.landing_soon h2 {
-  font-weight: 800;
-  font-size: 10vh;
-  text-align: center;
-  opacity: 0.1;
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.landing_soon span {
-  font-size: 8em;
-  transform: translate3d(0, 20px, 12px);
-  animation: float 6s ease-in-out infinite;
-  opacity: 0.8;
-}
-
-@keyframes float {
-  0% {
-    transform: translate3d(0, 20px, 12px);
-  }
-  50% {
-    transform: translate3d(0, -50px, 12px);
-  }
-  100% {
-    transform: translate3d(0, 20px, 12px);
-  }
-}
-
-@supports (-webkit-text-stroke: 1px black) {
-  .landing_soon h2 {
-    -webkit-text-stroke: 1px black;
-    -webkit-text-fill-color: white;
-  }
 }
