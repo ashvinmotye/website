@@ -1,0 +1,26 @@
+:root {
+  --primary: #{$primary};
+  --secondary: #{$secondary};
+  --green: #{$green};
+  --text: #{$text};
+  --context: #{$context};
+  --decoration: #{$decoration};
+
+  @media (prefers-color-scheme: dark) {
+    --primary: #{$primary--dark};
+    --secondary: #{$secondary--dark};
+    --green: #{$green--dark};
+    --text: #{$text--dark};
+    --context: #{$context--dark};
+    --decoration: #{$decoration--dark};
+  }
+}
+
+.dark-theme {
+  --primary: #{$primary--dark};
+  --secondary: #{$secondary--dark};
+  --green: #{$green--dark};
+  --text: #{$text--dark};
+  --context: #{$context--dark};
+  --decoration: #{$decoration--dark};
+}
