@@ -10,7 +10,7 @@ import { FaLinkedin } from "react-icons/fa"
 const Title = () => (
   <Col md={6} className={titleStyles.column}>
     <h1 className={titleStyles.title}>ashvin motye</h1>
-    <p className={`${titleStyles.links} d-flex`}>
+    <p className={`${titleStyles.links} d-flex links`}>
       <a href="https://github.com/ashvinmotye">
         <FaGithub />
       </a>
