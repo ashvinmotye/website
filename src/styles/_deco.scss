@@ -1,0 +1,35 @@
+.decoration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.deco {
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/green-bar.svg);
+  position: absolute;
+  width: 400px;
+  height: 300px;
+
+  &--1 {
+    top: -100px;
+    right: -140px;
+  }
+
+  &--2 {
+    top: 50px;
+    right: -120px;
+  }
+  
+}
+
+body {
+  overflow-x: hidden;
+}
