@@ -8,6 +8,19 @@ nav {
     width: 50px;
   }
 
+  .logo-container {
+    width: 50px;
+    height: 25px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: var(--light);
+
+    @media (prefers-color-scheme: dark) {
+      background-image: var(--dark);
+    }
+  }
+
   .menu-link {
     color: var(--secondary);
     font-weight: 600;

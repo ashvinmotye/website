@@ -2,7 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import { Navbar, Nav, Container } from "react-bootstrap"
 
-import logo from "../images/logo-am--light.svg"
+import logoLight from "../images/logo-am--light.svg"
+import logoDark from "../images/logo-am--dark.svg"
 
 const Menu = () => (
   <>
@@ -10,7 +11,15 @@ const Menu = () => (
       <Container>
         <Nav className="mr-auto">
           <Link to="/">
-            <img src={logo} alt="Home" />
+            <div 
+              className="logo-container"
+              style={{
+                '--dark': `url(${logoDark})`,
+                '--light': `url(${logoLight})`
+              }} 
+            />
+            
+            <img src={logoLight} alt="Home" className="sr-only"/>
           </Link>
         </Nav>
 
