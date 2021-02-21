@@ -1,13 +1,3 @@
-.decoration {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
 .deco {
   background-size: 90%;
   background-repeat: no-repeat;
@@ -18,13 +8,30 @@
   height: 300px;
 
   &--1 {
-    top: -100px;
+    top: -140px;
     right: -140px;
+    z-index: -3;
+
+    @include phone {
+      top: -160px;
+      right: -250px;
+    }
   }
 
   &--2 {
-    top: 50px;
+    top: 10px;
     right: -120px;
+    z-index: -1;
+
+    @include phone {
+      top: -10px;
+      right: -230px;
+    }
   }
   
+}
+
+html, body {
+  position: relative;
+  overflow-x: hidden;
 }
