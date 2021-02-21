@@ -21,51 +21,29 @@
     color: var(--secondary);
     font-size: 2em;
     transition: transform 0.25s ease-in-out;
-  }
 
-  &:hover {
-    button {
-      transform: translateY(-34px);
-    }
-  }
-
-  @include dark {
-    &:hover {
-      button {
-        transform: translateY(0);
-      }
+    &:focus {
+      outline: none;
     }
 
-    button {
-      transform: translateY(-34px);
+    @include dark {
+      transform: translate(0);
     }
   }
 }
 
 .default {
   .theme-toggle {
-    &:hover {
-      button {
-        transform: translateY(-34px);
-      }
-    }
-
     button {
-      transform: translateY(0);
+      transform: translateY(-34px);
     }
   }
 }
 
 .dark-theme {
   .theme-toggle {
-    &:hover {
-      button {
-        transform: translateY(0);
-      }
-    }
-
     button {
-      transform: translateY(-34px);
+      transform: translate(0);
     }
   }
 }
