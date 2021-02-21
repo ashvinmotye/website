@@ -1,11 +1,12 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "/config/variables";
-@import "/config/mixins";
-@import "/config/themes";
+@import "./config/variables";
+@import "./config/mixins";
+@import "./config/themes";
 
-@import "layout";
-@import "navbar";
-@import "colors";
-@import "404";
+@import "./components/layout";
+@import "./components/navbar";
+@import "./components/colors";
+@import "./components/404";
 
-@import "deco";
+@import "./components/deco";
+@import "./components/themeToggle";

@@ -1,0 +1,49 @@
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  height: 34px;
+  width: 34px;
+  margin-left: 15px;
+  flex-direction: column;
+  overflow: hidden;
+
+  button {
+    border: none;
+    background-color: transparent;
+    width: 34px;
+    height: 34px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-shrink: 0;
+    color: var(--secondary);
+    font-size: 2em;
+    transition: transform 0.25s ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    @include dark {
+      transform: translate(0);
+    }
+  }
+}
+
+.default {
+  .theme-toggle {
+    button {
+      transform: translateY(-34px);
+    }
+  }
+}
+
+.dark-theme {
+  .theme-toggle {
+    button {
+      transform: translate(0);
+    }
+  }
+}
