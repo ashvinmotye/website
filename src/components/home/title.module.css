@@ -76,7 +76,7 @@
   height: 50px;
   z-index: -1;
   border-radius: 100%;
-  border: 1px solid #38ef7d;
+  border: 1px solid #47F10B;
   transform: scale(0);
   transition: transform 0.2s ease;
 }
