@@ -53,6 +53,10 @@
   position: relative;
 }
 
+.links a svg {
+  fill: var(--secondary);
+}
+
 .links a:not(:last-of-type) {
   margin-right: 30px;
 }
