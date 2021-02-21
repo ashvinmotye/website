@@ -8,7 +8,7 @@ import logoDark from "../images/logo-am--dark.svg"
 const Menu = () => (
   <>
     <Navbar expand="lg">
-      <Container>
+      <Container style={{padding: "0 15px"}}>
         <Nav className="mr-auto">
           <Link to="/">
             <div 
