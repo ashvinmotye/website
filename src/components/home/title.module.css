@@ -12,6 +12,7 @@
 @media screen and (max-width: 768px) {
   .image_wrapper {
     max-width: unset;
+    margin-bottom: 48px;
   }
 }
 
@@ -19,6 +20,27 @@
   font-size: 4em;
   font-weight: 800;
   margin-bottom: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    margin-bottom: 48px;
+    text-align: center;
+  }
+}
+
+.description {
+  font-size: 1em;
+  margin-top: 32px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .description {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    text-align: center;
+  }
 }
 
 .links {
@@ -29,6 +51,9 @@
   display: flex;
   align-items: center;
   position: relative;
+}
+
+.links a:not(:last-of-type) {
   margin-right: 30px;
 }
 
@@ -48,4 +73,10 @@
 
 .links a:hover:after {
   transform: scale(1);
+}
+
+@media screen and (max-width: 768px) {
+  .links {
+    justify-content: center;
+  }
 }

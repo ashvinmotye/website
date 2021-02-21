@@ -37,6 +37,11 @@ const Title = () => {
             <FaLinkedin />
           </a>
         </p>
+        <p className={titleStyles.description}>
+          Hi. I'm a Frontend Developer.<br/>
+          I like building not so random web apps. <br/>
+          And, I retweet cool stuffs.
+        </p>
       </Col>
 
       <Col md={6} className={`${titleStyles.column} ${titleStyles.column_right}`}>
