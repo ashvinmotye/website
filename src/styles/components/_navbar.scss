@@ -57,6 +57,25 @@ nav {
   }
 }
 
+.menu {
+  @include phone {
+    &-container {
+      flex-direction: column;
+    }
+
+    &--left {
+      margin: 16px auto;
+    }
+
+    &--right {
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
 .dark-theme {
   .logo-container {
     background-image: var(--dark);

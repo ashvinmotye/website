@@ -9,8 +9,8 @@ import logoDark from "../images/logo-am--dark.svg"
 const Menu = () => (
   <>
     <Navbar expand="lg">
-      <Container style={{padding: "0 15px"}}>
-        <Nav className="mr-auto">
+      <Container style={{padding: "0 15px"}} className="menu-container">
+        <Nav className="menu--left">
           <Link to="/">
             <div 
               className="logo-container"
@@ -24,7 +24,7 @@ const Menu = () => (
           </Link>
         </Nav>
 
-        <Nav className="ml-auto">
+        <Nav className="menu--right">
           <a className="menu-link" href="http://ashvinmotye.github.io/projects/">Projects</a>
 
           <ThemeToggle />
