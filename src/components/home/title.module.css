@@ -1,17 +1,18 @@
 .column {
-  min-height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
 }
 
-@media screen and (max-width: 768px) {
-  .column {
-    min-height: calc(50vh - 80px);
-  }
+.image_wrapper {
+  max-width: 385px;
+  position: relative;
+  z-index: -2;
 }
 
-.column_right {
-  justify-content: center;
+@media screen and (max-width: 768px) {
+  .image_wrapper {
+    max-width: unset;
+  }
 }
 
 .title {
