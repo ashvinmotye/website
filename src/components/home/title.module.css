@@ -1,6 +1,14 @@
 .column {
   display: flex;
   flex-direction: column;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+@media screen and (max-width: 768px) {
+  .column:nth-of-type(1) {
+    padding-bottom: 0;
+  }
 }
 
 .image_wrapper {
@@ -12,7 +20,6 @@
 @media screen and (max-width: 768px) {
   .image_wrapper {
     max-width: unset;
-    margin-bottom: 48px;
   }
 }
 
@@ -38,7 +45,6 @@
 @media screen and (max-width: 768px) {
   .description {
     margin-top: 48px;
-    margin-bottom: 48px;
     text-align: center;
   }
 }

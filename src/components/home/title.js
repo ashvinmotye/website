@@ -44,7 +44,7 @@ const Title = () => {
         </p>
       </Col>
 
-      <Col md={6} className={`${titleStyles.column} ${titleStyles.column_right}`}>
+      <Col md={6} className={titleStyles.column}>
         <div className={titleStyles.image_wrapper}>
           <Img fluid={myImage.file.childImageSharp.fluid} />
         </div>
