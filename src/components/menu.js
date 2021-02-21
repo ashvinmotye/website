@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Navbar, Nav, Container } from "react-bootstrap"
+import ThemeToggle from "./menu/themeToggle"
 
 import logoLight from "../images/logo-am--light.svg"
 import logoDark from "../images/logo-am--dark.svg"
@@ -25,6 +26,8 @@ const Menu = () => (
 
         <Nav className="ml-auto">
           <a className="menu-link" href="http://ashvinmotye.github.io/projects/">Projects</a>
+
+          <ThemeToggle />
         </Nav>
       </Container>
     </Navbar>

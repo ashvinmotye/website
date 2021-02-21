@@ -56,3 +56,15 @@ nav {
     }
   }
 }
+
+.dark-theme {
+  .logo-container {
+    background-image: var(--dark);
+  }
+}
+
+.default {
+  .logo-container {
+    background-image: var(--light);
+  }
+}

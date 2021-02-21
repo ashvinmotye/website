@@ -6,7 +6,7 @@
   --context: #{$context};
   --decoration: #{$decoration};
 
-  @media (prefers-color-scheme: dark) {
+  @include dark {
     --primary: #{$primary--dark};
     --secondary: #{$secondary--dark};
     --green: #{$green--dark};
@@ -14,6 +14,15 @@
     --context: #{$context--dark};
     --decoration: #{$decoration--dark};
   }
+}
+
+.default {
+  --primary: #{$primary};
+  --secondary: #{$secondary};
+  --green: #{$green};
+  --text: #{$text};
+  --context: #{$context};
+  --decoration: #{$decoration};
 }
 
 .dark-theme {
