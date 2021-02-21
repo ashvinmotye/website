@@ -1,23 +1,52 @@
 .column {
-  min-height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 @media screen and (max-width: 768px) {
-  .column {
-    min-height: calc(50vh - 80px);
+  .column:nth-of-type(1) {
+    padding-bottom: 0;
   }
 }
 
-.column_right {
-  justify-content: center;
+.image_wrapper {
+  max-width: 385px;
+  position: relative;
+  z-index: -2;
+}
+
+@media screen and (max-width: 768px) {
+  .image_wrapper {
+    max-width: unset;
+  }
 }
 
 .title {
   font-size: 4em;
   font-weight: 800;
   margin-bottom: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    margin-bottom: 48px;
+    text-align: center;
+  }
+}
+
+.description {
+  font-size: 1em;
+  margin-top: 32px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .description {
+    margin-top: 48px;
+    text-align: center;
+  }
 }
 
 .links {
@@ -28,6 +57,13 @@
   display: flex;
   align-items: center;
   position: relative;
+}
+
+.links a svg {
+  fill: var(--secondary);
+}
+
+.links a:not(:last-of-type) {
   margin-right: 30px;
 }
 
@@ -40,11 +76,18 @@
   height: 50px;
   z-index: -1;
   border-radius: 100%;
-  border: 1px solid #38ef7d;
+  border: 1px solid #47F10B;
   transform: scale(0);
   transition: transform 0.2s ease;
 }
 
 .links a:hover:after {
   transform: scale(1);
+}
+
+@media screen and (max-width: 768px) {
+  .links {
+    justify-content: center;
+    font-size: 3em;
+  }
 }
