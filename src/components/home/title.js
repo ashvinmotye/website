@@ -39,8 +39,8 @@ const Title = () => {
         </p>
         <p className={titleStyles.description}>
           Hi. I'm a Frontend Developer.<br/>
-          I like building not so random web apps. <br/>
-          And, I retweet cool stuffs.
+          I have 3+ years experience in developing websites. <br/>
+          I am currently focusing on JS frameworks.
         </p>
       </Col>
 
