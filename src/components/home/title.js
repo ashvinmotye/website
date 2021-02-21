@@ -27,13 +27,13 @@ const Title = () => {
       <Col md={6} className={titleStyles.column}>
         <h1 className={titleStyles.title}>ashvin motye</h1>
         <p className={`${titleStyles.links} d-flex links`}>
-          <a href="https://github.com/ashvinmotye">
+          <a href="https://github.com/ashvinmotye" target="_blank">
             <FaGithub />
           </a>
-          <a href="https://twitter.com/ashvinmotye">
+          <a href="https://twitter.com/ashvinmotye" target="_blank">
             <FaTwitter />
           </a>
-          <a href="https://www.linkedin.com/in/ashvinmotye/">
+          <a href="https://www.linkedin.com/in/ashvinmotye/" target="_blank">
             <FaLinkedin />
           </a>
         </p>
