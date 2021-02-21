@@ -6,7 +6,7 @@ import { FiMoon } from "react-icons/fi"
 import { getLocalStorage, setLocalStorage } from "../functions"
 
 const setDefaultTheme = () => {
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  if (window !== undefined && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     return "dark-theme"
   }
   return "default"
@@ -24,13 +24,14 @@ const ThemeToggle = () => {
   }
 
   useEffect(() => {
+    setTheme(setDefaultTheme());
     if(!getLocalStorage("theme")) {
       setLocalStorage("theme", theme);
       document.querySelector("html").classList.add(theme);
     } else {
       document.querySelector("html").classList.add(getLocalStorage("theme"));
     }
-  })
+  }, [theme])
   
   return (
     <div className="theme-toggle">
