@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect } from "react"
 
 import { FiSun } from "react-icons/fi"
 import { FiMoon } from "react-icons/fi"
@@ -6,6 +6,10 @@ import { FiMoon } from "react-icons/fi"
 import { getLocalStorage, setLocalStorage } from "../functions"
 
 const setDefaultTheme = window => {
+  if(getLocalStorage("theme")) {
+    return getLocalStorage("theme");
+  }
+
   if(typeof window !== undefined) {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       return "dark-theme"
@@ -14,27 +18,24 @@ const setDefaultTheme = window => {
   return "default"
 }
 
+const setThemeClass = themeType => {
+  document.querySelector("html").className = "";
+  document.querySelector("html").classList.add(themeType);
+}
+
+const handleThemeChange = themeType => {
+  setLocalStorage("theme", themeType);
+  setThemeClass(themeType);
+}
+
 const ThemeToggle = () => {
-  const [theme, setTheme] = useState("default");
-
-  const handleThemeChange = themeType => {
-    setLocalStorage("theme", themeType);
-    setTheme(themeType);
-
-    document.querySelector("html").className = "";
-    document.querySelector("html").classList.add(themeType);
-  }
-
   useEffect(() => {
-    typeof window !== undefined ? setTheme(setDefaultTheme(window)) : null;
-    
-    if(!getLocalStorage("theme")) {
-      setLocalStorage("theme", theme);
-      document.querySelector("html").classList.add(theme);
-    } else {
-      document.querySelector("html").classList.add(getLocalStorage("theme"));
+    if(typeof window !== undefined && !getLocalStorage("theme")) {
+      handleThemeChange(setDefaultTheme(window));
+    } else if (getLocalStorage("theme") !== false) {
+      setThemeClass(getLocalStorage("theme"));
     }
-  }, [theme])
+  })
   
   return (
     <div className="theme-toggle">
