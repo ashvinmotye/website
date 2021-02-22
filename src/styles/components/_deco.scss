@@ -4,28 +4,33 @@
   background-position: center;
   background-image: url(../images/green-bar.svg);
   position: absolute;
-  width: 400px;
-  height: 300px;
+  width: 40vw;
+  height: 30vw;
+
+  @include phone {
+    width: 400px;
+    height: 300px;
+  }
 
   &--1 {
-    top: -140px;
-    right: -140px;
     z-index: -3;
-
+    top: -14vw;
+    right: -18vw;
+    
     @include phone {
-      top: -160px;
-      right: -250px;
+      top: -140px;
+      right: -140px;
     }
   }
 
   &--2 {
-    top: 10px;
-    right: -120px;
     z-index: -1;
-
+    top: 6vw;
+    right: -10vw;
+    
     @include phone {
-      top: -10px;
-      right: -230px;
+      top: 10px;
+      right: -120px;
     }
   }
   
