@@ -29,12 +29,15 @@ const Title = () => {
         <p className={`${titleStyles.links} d-flex links`}>
           <a href="https://github.com/ashvinmotye" target="_blank" rel="noreferrer">
             <FaGithub />
+            <span className="sr-only">Github</span>
           </a>
           <a href="https://twitter.com/ashvinmotye" target="_blank" rel="noreferrer">
             <FaTwitter />
+            <span className="sr-only">Twitter</span>
           </a>
           <a href="https://www.linkedin.com/in/ashvinmotye/" target="_blank" rel="noreferrer">
             <FaLinkedin />
+            <span className="sr-only">Linkedin</span>
           </a>
         </p>
         <p className={titleStyles.description}>

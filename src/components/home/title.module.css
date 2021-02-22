@@ -70,19 +70,20 @@
 .links a:after {
   content: "";
   position: absolute;
-  top: -10px;
-  left: -10px;
+  top: 50%;
+  left: 50%;
   width: 50px;
   height: 50px;
   z-index: -1;
   border-radius: 100%;
   border: 1px solid #47F10B;
+  transform-origin: -25% -25%;
   transform: scale(0);
   transition: transform 0.2s ease;
 }
 
 .links a:hover:after {
-  transform: scale(1);
+  transform: scale(1) translate(-50%, -50%);
 }
 
 @media screen and (max-width: 768px) {
@@ -92,14 +93,7 @@
   }
 
   .links a:after {
-    top: 50%;
-    left: 50%;
     width: 80px;
     height: 80px;
-    transform-origin: -50% -50%;
-  }
-
-  .links a:hover:after {
-    transform: scale(1) translate(-50%, -50%);
   }
 }

@@ -1,3 +1,7 @@
+*::selection {
+  background-color: var(--green);
+}
+
 body {
   background-color: var(--primary);
   transition: background-color 0.15s ease-in-out;

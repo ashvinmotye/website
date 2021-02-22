@@ -9,3 +9,7 @@
 @mixin desktop {
   @media (min-width: $xs) { @content; }
 }
+
+@mixin desktop-xl {
+  @media (min-width: $xl) { @content; }
+}
