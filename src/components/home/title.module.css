@@ -77,7 +77,7 @@
   z-index: -1;
   border-radius: 100%;
   border: 1px solid #47F10B;
-  transform-origin: -50% -50%;
+  transform-origin: -25% -25%;
   transform: scale(0);
   transition: transform 0.2s ease;
 }
