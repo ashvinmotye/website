@@ -16,6 +16,11 @@
     z-index: -3;
     top: -14vw;
     right: -18vw;
+
+    @include desktop-xl {
+      top: -18vw;
+      right: -10vw;
+    }
     
     @include phone {
       top: -140px;
@@ -27,6 +32,11 @@
     z-index: -1;
     top: 6vw;
     right: -10vw;
+
+    @include desktop-xl {
+      top: -2vw;
+      right: -6vw;
+    }
     
     @include phone {
       top: 10px;
