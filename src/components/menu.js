@@ -9,7 +9,7 @@ import logoDark from "../images/logo-am--dark.svg"
 const Menu = () => (
   <>
     <Navbar expand="lg">
-      <Container style={{padding: "0 15px"}} className="menu-container">
+      <Container style={{padding: "0 30px"}} className="menu-container">
         <Nav className="menu--left">
           <Link to="/">
             <div 

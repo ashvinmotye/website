@@ -58,6 +58,13 @@ nav {
 }
 
 .menu {
+  @include tablet {
+    &--right {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
   @include phone {
     &-container {
       flex-direction: column;
@@ -69,8 +76,6 @@ nav {
 
     &--right {
       width: 100%;
-      flex-direction: row;
-      align-items: center;
       justify-content: center;
     }
   }
