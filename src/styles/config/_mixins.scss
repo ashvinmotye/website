@@ -6,8 +6,12 @@
   @media (max-width: $xs) { @content; }
 }
 
+@mixin tablet {
+  @media (max-width: $tb) { @content; }
+}
+
 @mixin desktop {
-  @media (min-width: $xs) { @content; }
+  @media (min-width: $tb) { @content; }
 }
 
 @mixin desktop-xl {

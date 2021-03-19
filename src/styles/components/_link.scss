@@ -1,0 +1,29 @@
+.underline-link {
+  color: var(--secondary);
+  font-size: 16px;
+  position: relative;
+  padding: 6px;
+  padding-right: 24px;
+
+  &:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--secondary);
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    transition: height 0.25s ease-in-out, background-color 0.1s ease-in-out;
+  }
+
+  &:hover {
+    color: var(--secondary);
+    text-decoration: none;
+
+    &:after {
+      height: 50%;
+      background-color: var(--green);
+    }
+  }
+}
