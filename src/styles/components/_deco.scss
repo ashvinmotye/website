@@ -21,6 +21,10 @@
       top: -18vw;
       right: -10vw;
     }
+
+    @include tablet {
+      top: 8vw;
+    }
     
     @include phone {
       top: -140px;
@@ -36,6 +40,10 @@
     @include desktop-xl {
       top: -2vw;
       right: -6vw;
+    }
+
+    @include tablet {
+      top: 28vw;
     }
     
     @include phone {
