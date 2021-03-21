@@ -5,6 +5,7 @@
   --text: #{$text};
   --context: #{$context};
   --decoration: #{$decoration};
+  --scrollbar-thumb: #{$scrollbar-thumb};
 
   @include dark {
     --primary: #{$primary--dark};
@@ -13,6 +14,7 @@
     --text: #{$text--dark};
     --context: #{$context--dark};
     --decoration: #{$decoration--dark};
+    --scrollbar-thumb: #{$scrollbar-thumb};
   }
 }
 
