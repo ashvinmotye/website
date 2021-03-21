@@ -58,3 +58,16 @@ html, body {
   position: relative;
   overflow-x: hidden;
 }
+
+.main {
+  background-repeat: no-repeat;
+  background-position: left 90%;
+}
+
+.dark-theme .main {
+  background-image: url("../images/deco--dark.svg");
+}
+
+.default .main {
+  background-image: url("../images/deco--light.svg");
+}
