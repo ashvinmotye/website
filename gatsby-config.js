@@ -5,6 +5,7 @@ module.exports = {
     description: `Hi, I'am Ashvin Motye and I'm a Frontend Developer with 3+ years experience in developing websites. I am currently focusing on JS frameworks.`,
     author: `Ashvin Motye`,
   },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
