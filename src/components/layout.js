@@ -11,6 +11,7 @@ import { StaticQuery, graphql } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
 
 import Menu from "./menu"
+import Footer from "./footer"
 
 const Layout = ({ children, pageInfo }) => (
   <StaticQuery
@@ -35,15 +36,7 @@ const Layout = ({ children, pageInfo }) => (
             </Col>
           </Row>
         </Container>
-        <Container fluid className="px-0 sr-only">
-          <Row noGutters>
-            <Col className="footer-col">
-              <footer>
-                <span>© {new Date().getFullYear()} Ashvin Motye</span>
-              </footer>
-            </Col>
-          </Row>
-        </Container>
+        <Footer />
       </>
     )}
   />
