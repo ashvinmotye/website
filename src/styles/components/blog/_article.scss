@@ -1,0 +1,23 @@
+.blog-post-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15px;
+  justify-content: left;
+  margin-left: -6vw;
+}
+
+.blog-post {
+  width: 40vw;
+  margin-left: 60px;
+  max-width: 520px;
+}
+
+.blog-image {
+  width: 30%;
+
+  img {
+    width: 100%;
+    margin-top: 60px;
+    border-radius: 50%;
+  }
+}
