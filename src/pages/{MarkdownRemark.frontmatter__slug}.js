@@ -16,13 +16,11 @@ const Template = ({ data }) => {
             <SEO title={frontmatter.title} />
 
             <div className="blog-post-container">
-                <div className="blog-image">
-                    <img src={frontmatter.cover} alt={frontmatter.title}/>
-                </div>
-
                 <div className="blog-post">
-                    <h1>{frontmatter.title}</h1>
-                    <h2>{frontmatter.date}</h2>
+                    <div className="blog-title-container">
+                      <h1>{frontmatter.title}</h1>
+                      <p>{frontmatter.date}</p>
+                    </div>
                     <div
                     className="blog-post-content"
                     dangerouslySetInnerHTML={{ __html: html }}
@@ -47,7 +45,6 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         slug
         title
-        cover
       }
     }
   }

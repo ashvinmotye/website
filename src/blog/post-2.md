@@ -2,7 +2,6 @@
 slug: "/blog/my-second-post"
 date: "2021-05-04"
 title: "My second blog post"
-cover: "https://i.picsum.photos/id/189/500/500.jpg?hmac=-wioRoSOaaDgK91GEZKbvtBhwcqSy1W9GKw8lTD726g"
 ---
 
 Hello World! First blog article from Gatsby.
