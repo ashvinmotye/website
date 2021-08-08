@@ -5,12 +5,12 @@
     font-size: 1.2em;
     color: var(--secondary);
   }
+}
 
-  span {
-    display: block;
-    color: var(--context);
-    font-size: 0.8em;
-  }
+.blog-post--date {
+  display: block;
+  color: var(--context);
+  font-size: 0.8em;
 }
 
 .blog-posts {
@@ -28,5 +28,35 @@
 
   @include phone {
     margin-top: 48px;
+  }
+}
+
+.blog-post--link {
+  position: relative;
+
+  a {
+    position: relative;
+    transition: color 0.5s ease;
+
+    &:hover {
+      text-decoration: none;
+      color: var(--green);
+
+      &:after {
+        transform: translateX(6px);
+      }
+    }
+
+    &:after {
+      content: "\2192";
+      position: absolute;
+      font-size: 2em;
+      width: 40px;
+      top: 25%;
+      right: -45px;
+      height: 0;
+      line-height: 0;
+      transition: transform 0.5s ease;
+    }
   }
 }
