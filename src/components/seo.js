@@ -18,7 +18,8 @@ function SEO({ description, lang, meta, keywords, title, image }) {
           siteMetadata {
             title
             description
-            author
+            author,
+            url
           }
         }
         file(relativePath: {eq: "ashvin-motye--card.jpg"}) {
@@ -34,7 +35,7 @@ function SEO({ description, lang, meta, keywords, title, image }) {
 
   const metaDescription = description || site.siteMetadata.description
 
-  const metaImage = image || file.childImageSharp.fixed.src
+  const metaImage = site.siteMetadata.url + (image || file.childImageSharp.fixed.src)
 
   return (
     <Helmet
