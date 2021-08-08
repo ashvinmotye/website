@@ -4,6 +4,25 @@
   a {
     font-size: 1.2em;
     color: var(--secondary);
+    transition: color 0.5s ease;
+    
+    &:hover {
+      text-decoration: none;
+      color: var(--green);
+
+      span {
+        transform: translateX(6px);
+      }
+    }
+
+    span {
+      font-size: 2em;
+      height: 100%;
+      line-height: 0.4;
+      display: inline-flex;
+      align-self: self-end;
+      transition: transform 0.5s ease;
+    }
   }
 }
 
@@ -28,35 +47,5 @@
 
   @include phone {
     margin-top: 48px;
-  }
-}
-
-.blog-post--link {
-  position: relative;
-
-  a {
-    position: relative;
-    transition: color 0.5s ease;
-
-    &:hover {
-      text-decoration: none;
-      color: var(--green);
-
-      &:after {
-        transform: translateX(6px);
-      }
-    }
-
-    &:after {
-      content: "\2192";
-      position: absolute;
-      font-size: 2em;
-      width: 40px;
-      top: 25%;
-      right: -45px;
-      height: 0;
-      line-height: 0;
-      transition: transform 0.5s ease;
-    }
   }
 }

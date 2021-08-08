@@ -25,7 +25,7 @@ const Blog = ({ data: { allMarkdownRemark : { nodes : posts }}}) => {
                 const { slug, title, date } = post.frontmatter;
                 return (
                   <div className="blog-post--link" key={post.id}>
-                    <Link to={slug}>{title}</Link>
+                    <Link to={slug}>{title} <span>&#x2192;</span></Link>
                     <span className="blog-post--date">{date}</span>
                   </div>
                 )
