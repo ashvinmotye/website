@@ -1,5 +1,8 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
+
+// Utilities
+import kebabCase from "lodash/kebabCase"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -23,7 +26,7 @@ const Template = ({ data }) => {
                       <p className="blog-post-category">
                         {
                           frontmatter.tags.map(tag => {
-                            return <a key={tag} href="#">{tag}</a>
+                            return <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
                           })
                         }
                       </p>

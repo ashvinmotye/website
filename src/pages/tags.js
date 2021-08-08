@@ -15,9 +15,6 @@ import Decoration from "../components/home/decoration"
 const TagsPage = ({
   data: {
     allMarkdownRemark: { group },
-    site: {
-      siteMetadata: { title },
-    },
   },
 }) => (
   <>
