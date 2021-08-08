@@ -3,6 +3,8 @@ slug: "/blog/css-dark-mode"
 date: "2021-08-08"
 title: "Dark mode with CSS variables"
 tags: ["how to", "css", "frontend"]
+description: "Learn how to setup dark mode using CSS variables and a few lines of JavaScript."
+image: "../images/blog/dark-mode.jpg"
 ---
 In this article, I will show you how I use CSS variables to implement light and dark mode in my projects.
 
