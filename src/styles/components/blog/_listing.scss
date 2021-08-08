@@ -1,0 +1,14 @@
+.blog-post--link {
+  margin-bottom: 24px;
+
+  a {
+    font-size: 1.2em;
+    color: var(--secondary);
+  }
+
+  span {
+    display: block;
+    color: var(--context);
+    font-size: 0.8em;
+  }
+}
