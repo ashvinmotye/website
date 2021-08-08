@@ -12,3 +12,21 @@
     font-size: 0.8em;
   }
 }
+
+.blog-posts {
+  margin-top: 32px;
+
+  @include phone {
+    margin-top: 48px;
+  }
+}
+
+.tags-articles {
+  padding: 0;
+  list-style: none;
+  margin-top: 32px;
+
+  @include phone {
+    margin-top: 48px;
+  }
+}
