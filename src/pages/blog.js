@@ -10,7 +10,11 @@ const Blog = ({ data: { allMarkdownRemark : { nodes : posts }}}) => {
   return (
     <>
       <Layout pageInfo={{ pageName: "blog" }}>
-        <SEO title="Blog" keywords={[`ashvin`, `motye`, `blog`]} />
+        <SEO
+          title="Blog"
+          keywords={[`ashvin`, `motye`, `blog`]}
+          description={`Hello, welcome to my blog! I write about things that I learn and problems that I solve on a daily basis.`}
+        />
 
         <div className="blog-post-container">
           <h1>Blog</h1>
