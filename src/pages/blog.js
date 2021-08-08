@@ -20,7 +20,7 @@ const Blog = ({ data: { allMarkdownRemark : { nodes : posts }}}) => {
               posts.map(post => {
                 const { slug, title, date } = post.frontmatter;
                 return (
-                  <div className="blog-post--link">
+                  <div className="blog-post--link" key={post.id}>
                     <Link to={slug}>{title}</Link>
                     <span className="blog-post--date">{date}</span>
                   </div>
@@ -41,6 +41,7 @@ export const query = graphql`
   {
     allMarkdownRemark {
       nodes {
+        id
         frontmatter {
           title
           slug
