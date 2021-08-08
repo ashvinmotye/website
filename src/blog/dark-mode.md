@@ -1,6 +1,6 @@
 ---
 slug: "/blog/css-dark-mode"
-date: "2021-08-08"
+date: "2021-08-09"
 title: "Dark mode with CSS variables"
 tags: ["how to", "css", "frontend"]
 description: "Learn how to setup dark mode using CSS variables and a few lines of JavaScript."
