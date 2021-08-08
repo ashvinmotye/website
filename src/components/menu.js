@@ -25,6 +25,7 @@ const Menu = () => (
         </Nav>
 
         <Nav className="menu--right">
+          <Link to="/blog" className="menu-link">Blog</Link>
           <a className="menu-link" href="http://ashvinmotye.github.io/projects/">Projects</a>
 
           <ThemeToggle />
