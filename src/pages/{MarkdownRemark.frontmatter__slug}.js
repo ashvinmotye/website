@@ -18,8 +18,15 @@ const Template = ({ data }) => {
             <div className="blog-post-container">
                 <div className="blog-post">
                     <div className="blog-title-container">
+                      <p className="blog-post-date">{frontmatter.date}</p>
                       <h1>{frontmatter.title}</h1>
-                      <p>{frontmatter.date}</p>
+                      <p className="blog-post-category">
+                        {
+                          frontmatter.category.map(category => {
+                            return <a key={category} href="#">{category}</a>
+                          })
+                        }
+                      </p>
                     </div>
                     <div
                     className="blog-post-content"
@@ -45,6 +52,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         slug
         title
+        category
       }
     }
   }

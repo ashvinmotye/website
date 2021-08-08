@@ -9,11 +9,6 @@
   h1 {
     font-size: 4em;
     font-weight: 800;
-    margin-bottom: 32px;
-
-    @include phone {
-      margin-bottom: 48px;
-    }
   }
 }
 
@@ -28,10 +23,65 @@
 
 .blog-title-container {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+}
 
-  p {
-    margin-bottom: 0;
-    color: var(--context);
+.blog-post-date {
+  margin-bottom: 0;
+  color: var(--context);
+}
+
+.blog-post-category {
+  margin-top: 12px;
+  margin-bottom: 32px;
+
+  @include phone {
+    margin-bottom: 48px;
+  }
+
+  a {
+    color: var(--primary);
+    margin-right: 6px;
+    padding: 3px 8px;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    letter-spacing: 0.3px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 3px;
+
+    &:hover {
+      text-decoration: none;
+
+      &:before {
+        left: -120%;
+      }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: var(--green);
+      top: 0;
+      left: 0;
+      border-radius: 3px;
+      z-index: -2;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 200%;
+      height: 100%;
+      background: var(--secondary);
+      z-index: -1;
+      top: 0;
+      left: -250%;
+      transition: all 0.6s ease;
+      transform: skewX(30deg);
+    }
   }
 }

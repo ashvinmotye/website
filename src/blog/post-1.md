@@ -2,6 +2,7 @@
 slug: "/blog/my-first-post"
 date: "2019-05-04"
 title: "My first blog post"
+category: ["how to", "thoughts"]
 ---
 Paragraphs are separated by a blank line.
 

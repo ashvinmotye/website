@@ -2,6 +2,7 @@
 slug: "/blog/my-second-post"
 date: "2021-05-04"
 title: "My second blog post"
+category: ["how to"]
 ---
 
 Hello World! First blog article from Gatsby.
