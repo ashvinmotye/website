@@ -39,13 +39,13 @@ const Blog = ({ data: { allMarkdownRemark : { nodes : posts }}}) => {
 
 export const query = graphql`
   {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
       nodes {
         id
         frontmatter {
           title
           slug
-          date(formatString: "DD MMM YYYY")
+          date(formatString: "MMMM DD, YYYY")
         }
       }
     }
