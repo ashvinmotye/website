@@ -4,9 +4,9 @@ date: "2021-08-08"
 title: "Dark mode with CSS variables"
 tags: ["how to", "css", "frontend"]
 ---
-In this article, I will show you how I used CSS variables to implement light and dark mode in my projects.
+In this article, I will show you how I use CSS variables to implement light and dark mode in my projects.
 
-I have used two classes on the `html` tag: `.light` and `.dark`. By default, I add the `.light` class to the `html` tag. If I have access to the source code, I add the class directly in the html file or I add it via JS.
+I use two classes on the `html` tag: `.light` and `.dark`. By default, I add the `.light` class to the `html` tag. If I have access to the source code, I add the class directly in the html file or I add it via JS.
 
 ```javascript
 document.addEventListener("DOMContentLoaded", () => {
