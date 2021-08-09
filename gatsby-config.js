@@ -90,9 +90,6 @@ module.exports = {
         ],
         pluginConfig: {
           head: true,
-          anonymize: true,
-          respectDNT: true,
-          exclude: ["/preview/**"],
         }
       },
     },
