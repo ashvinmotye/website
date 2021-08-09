@@ -22,11 +22,13 @@ const Blog = ({ data: { allMarkdownRemark : { nodes : posts }}}) => {
           <div className="blog-posts">
             {
               posts.map(post => {
-                const { slug, title, date } = post.frontmatter;
+                const { slug, title, date, description } = post.frontmatter;
                 return (
                   <div className="blog-post--link" key={post.id}>
-                    <Link to={slug}>{title} <span>&#x2192;</span></Link>
+                    <Link to={slug}>{title}</Link>
                     <span className="blog-post--date">{date}</span>
+                    <p className="blog-post--description">{description}</p>
+                    <Link to={slug} className="underline-link">Read</Link>
                   </div>
                 )
               })
@@ -50,6 +52,7 @@ export const query = graphql`
           title
           slug
           date(formatString: "MMMM DD, YYYY")
+          description
         }
       }
     }

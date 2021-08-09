@@ -1,7 +1,7 @@
 .blog-post--link {
-  margin-bottom: 24px;
+  margin-bottom: 54px;
 
-  a {
+  a:not(.underline-link) {
     font-size: 1.2em;
     color: var(--secondary);
     transition: color 0.5s ease;
@@ -9,19 +9,6 @@
     &:hover {
       text-decoration: none;
       color: var(--green);
-
-      span {
-        transform: translateX(6px);
-      }
-    }
-
-    span {
-      font-size: 2em;
-      height: 100%;
-      line-height: 0.4;
-      display: inline-flex;
-      align-self: self-end;
-      transition: transform 0.5s ease;
     }
   }
 }
@@ -34,9 +21,12 @@
 
 .blog-posts {
   margin-top: 32px;
+  width: 60vw;
+  max-width: 760px;
 
   @include phone {
     margin-top: 48px;
+    width: 100%;
   }
 }
 
