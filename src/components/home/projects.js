@@ -1,4 +1,5 @@
 import React from "react"
+import { StaticQuery, Link, graphql } from "gatsby"
 
 import { Container, Row, Col } from "react-bootstrap"
 
@@ -7,14 +8,34 @@ import styles from "./projects.module.scss"
 const Projects = () => (
   <Container>
     <Row className={styles.row}>
-      <Col lg={{ span: 4, offset: 4 }} md={6} className={styles.col}>
-        <span className={styles.tag}>Project</span>
-        <p className={styles.title}>Password Generator</p>
-        <p className={styles.description}>Do you find yourself in a difficult spot where you need to think of a unique and SECURE password to use for each of your site?</p>
+      <StaticQuery
+        query={graphql`
+          {
+            allMarkdownRemark(limit: 1, sort: {fields: frontmatter___date, order: DESC}) {
+              nodes {
+                frontmatter {
+                  slug
+                  title
+                  description
+                }
+              }
+            }
+          }
+        `}
+        render={data => {
+          const {title, description, slug} = data.allMarkdownRemark.nodes[0].frontmatter;
+          return (
+            <Col lg={{ span: 4, offset: 4 }} md={6} className={styles.col}>
+              <span className={styles.tag}>Article</span>
+              <p className={styles.title}>{title}</p>
+              <p className={styles.description}>{description}</p>
 
-        <a href="https://ashvinmotye.github.io/password/" target="_blank" rel="noreferrer" className="underline-link">Explore</a>
-      </Col>
-
+              <Link to={slug} className="underline-link">Read</Link>
+            </Col>
+          )
+        }
+      }
+      ></StaticQuery>
       <Col lg={4} md={6}>
         <span className={styles.tag}>Project</span>
         <p className={styles.title}>Memorise</p>
