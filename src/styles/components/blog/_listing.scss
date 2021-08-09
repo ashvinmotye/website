@@ -1,0 +1,41 @@
+.blog-post--link {
+  margin-bottom: 54px;
+
+  a:not(.underline-link) {
+    font-size: 1.2em;
+    color: var(--secondary);
+    transition: color 0.5s ease;
+    
+    &:hover {
+      text-decoration: none;
+      color: var(--green);
+    }
+  }
+}
+
+.blog-post--date {
+  display: block;
+  color: var(--context);
+  font-size: 0.8em;
+}
+
+.blog-posts {
+  margin-top: 32px;
+  width: 60vw;
+  max-width: 760px;
+
+  @include phone {
+    margin-top: 48px;
+    width: 100%;
+  }
+}
+
+.tags-articles {
+  padding: 0;
+  list-style: none;
+  margin-top: 32px;
+
+  @include phone {
+    margin-top: 48px;
+  }
+}

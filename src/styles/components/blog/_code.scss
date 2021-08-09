@@ -1,0 +1,10 @@
+.blog-post-content {
+  :not(pre) > code[class*="language-"] {
+    color: #e83e8c;
+    padding: 3px 6px;
+  }
+  
+  pre[class*="language-"] {
+    margin: 24px 0;
+  }
+}
