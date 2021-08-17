@@ -79,6 +79,9 @@ module.exports = {
               escapeEntities: {},
             },
           },
+          {
+            resolve: "gatsby-remark-external-links",
+          }
         ],
       },
     },
