@@ -4,7 +4,7 @@ date: "2021-08-23"
 title: "Gatsby optional field error"
 tags: ["gatsby", "grapqhl", "frontend"]
 description: "How I fixed GraphQL error #85923 for optional field in Gatsby."
-image: "../images/blog/gatsby-optional-field-error"
+image: "../images/blog/gatsby-optional-field-error.jpg"
 ---
 ## Github repository
 You can clone the [demo repository](https://github.com/ashvinmotye/demo-gatsby) from Github using:
