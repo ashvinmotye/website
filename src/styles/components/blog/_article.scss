@@ -95,4 +95,8 @@
   li {
     color: var(--secondary);
   }
+  
+  h2:not(:first-of-type) {
+    margin-top: 36px;
+  }
 }
