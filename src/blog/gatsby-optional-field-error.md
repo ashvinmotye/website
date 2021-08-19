@@ -16,25 +16,25 @@ You can clone the [demo repository](https://github.com/ashvinmotye/demo-gatsby) 
 I will be needing to query these fields to make up the markdown pages. All the fields are required, except the `author` field.
 ```
 markdownRemark
-    html
-    frontmatter
-        date
-        slug
-        title
-        author (optional)
+  html
+  frontmatter
+    date
+    slug
+    title
+    author (optional)
 ```
 
 ## Folder structure
-These are the folders and files that will be used in this article. All the markdown files in `src/markdown-pages` will be generated from the `templates/markdown-page.js`. This template is called in the `createPages` API in `gatsby-node.js`.
+These are the folders and files that will be used in this article. All the markdown files in `src/markdown-pages` will be generated from the `templates/markdown-page.js`. This template is called in the `createPage` API in `gatsby-node.js`.
 ```
 root
-    gatsby-node.js
-    src
-      markdown-pages
-        post-1.md
-        post-2.md
-      templates
-        markdown-page.js
+  gatsby-node.js
+  src
+    markdown-pages
+      post-1.md
+      post-2.md
+    templates
+      markdown-page.js
         
 ```
 ## Pages content
@@ -66,12 +66,8 @@ There was an error in your GraphQL query:
 Cannot query field "author" on type "MarkdownRemarkFrontmatter".
 ```
 Gatsby recommends the following:
-1. You want to optionally use your field "author" and right now it is not used
-anywhere. Therefore Gatsby can't infer the type and add it to the GraphQL
-schema. A quick fix is to add at least one entry with that field ("dummy
-content")
-1. It is recommended to explicitly type your GraphQL schema if you want to use
-optional fields. This way you don't have to add the mentioned "dummy content".
+1. You want to optionally use your field "author" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+1. It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned "dummy content".
 
 While the second option is the best solution, in my work scenario, it was quite tricky to build the custom schema since the optional field was deeply nested several levels down. So, I opted for the first solution. I added a dummy content in my markdown pages.
 
