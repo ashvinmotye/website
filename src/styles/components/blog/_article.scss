@@ -86,6 +86,13 @@
   }
 }
 
-.blog-post-content p a {
-  color: var(--green);
+.blog-post-content {
+  p a {
+    color: var(--green);
+  }
+
+  h2,
+  li {
+    color: var(--secondary);
+  }
 }
