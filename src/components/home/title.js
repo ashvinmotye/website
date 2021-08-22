@@ -42,9 +42,9 @@ const Title = () => {
             </a>
           </p>
           <p className={titleStyles.description}>
-            Hi. I'm a Frontend Developer.<br />
+            Hi. I'm a developer.<br />
           I have 3+ years experience in developing websites. <br />
-          I am currently focusing on JS frameworks.
+          I am currently focusing on JS frameworks and Salesforce.
         </p>
         </Col>
 
