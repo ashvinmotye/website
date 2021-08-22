@@ -1,0 +1,12 @@
+#scroll {
+  @include desktop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: #a8ff78;
+    background: linear-gradient(to right, #47f10b, #78ffd6);
+    width: 0;
+    transition: width 0.1s ease;
+  }
+}
