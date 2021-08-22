@@ -105,7 +105,7 @@ Looking into my GraphQL query in the `gatsby-node.js` file, I am querying for al
 It took me a while to realise that I can filter out the dummy page in the query itself! So I just set a filter using the graphql query editor (`/___graphql`) to return only markdownRemark nodes whose frontmatter title is not equal to my dummy page title. You could use any field for the filter, as long as it is unique to that dummy node.
 ```
 {
-  postsRemark: allMarkdownRemark(filter: {frontmatter: {title: {ne: "Dummy Macrkdown Page"}}}) {
+  postsRemark: allMarkdownRemark(filter: {frontmatter: {title: {ne: "Dummy Markdown Page"}}}) {
     edges {
       node {
         id
