@@ -66,3 +66,6 @@ document.querySelector("button").addEventListener("click", () => {
 ```
 
 Using this method, I have successfully implemented dark mode toggle on my website. You can find a demo on [Codepen](https://codepen.io/ashvinmotye/full/mdmQBYG).
+
+<br><br><br>
+<small>*Photo used in social media banner by [Kilarov Zaneit](https://unsplash.com/@kilarov345) on [Unsplash](https://unsplash.com/photos/K31NrTATpiQ).*</small>
