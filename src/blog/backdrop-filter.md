@@ -15,3 +15,6 @@ For my use, `backdrop-filter: blur(8px)` did the trick. You can find a demo on [
 During my research, I also came across this handy generator: [https://glassmorphism.com/](https://glassmorphism.com/)
 
 You can read more about `backdrop-filter` on [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter).
+
+<br><br><br>
+<small>*Photo used in social media banner by [Annie Spratt](https://unsplash.com/@anniespratt) on [Unsplash](https://unsplash.com/photos/h5XIpc91JhY).*</small>

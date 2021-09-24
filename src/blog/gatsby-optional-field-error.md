@@ -125,3 +125,6 @@ And done! No more error for optional fields and no more unwanted dummy pages ren
 1. Make sure to use something unique in one of your fields.
 1. Using that unique value and field, filter out the dummy content in your GraphQL query in `gatsby-node.js`.
 1. The resulting nodes are rendered using the `createPage` API.
+
+<br><br><br>
+<small>*Photo used in social media banner by [Tim Collins](https://unsplash.com/@timcollinsphoto) on [Unsplash](https://unsplash.com/photos/B5ox94ZFGgI).*</small>
