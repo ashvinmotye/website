@@ -7,7 +7,7 @@ description: "Automatically sort CSS properties alphabetically in Visual Studio 
 image: "../images/blog/automatic-css-sorting-vs-code.jpg"
 ---
 ## Background
-Recently I started working with Salesforce and on my tasks was to make some styling adjustments on an Experience Cloud site. Using the CSS overrides, I started out writing my usual CSS rules. But I kept getting warnings to keep the CSS properties in alphabetical order. I tried doing it by hand and soon became exhausting to sort it.
+Recently I started working with Salesforce and one of my tasks was to make some styling adjustments on an Experience Cloud site. Using the CSS overrides, I started out writing my usual CSS rules. But I kept getting warnings to keep the CSS properties in alphabetical order. I tried doing it by hand but soon became exhausting to sort.
 
 ## PostCSS Sorting extension
 I looked up for some extensions for VS Code and found [PostCSS Sorting by mrmlnc](https://github.com/mrmlnc/vscode-postcss-sorting).<br>
