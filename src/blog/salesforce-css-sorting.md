@@ -17,7 +17,7 @@ After installing, I set up the config to sort all the properties alphabetically.
 1. Press `F1`
 1. Type `Open settings JSON`
 1. Select `Preferences: Open Settings (JSON)` to open up your `settings.json` file
-1. Add the following to the existing object and save.
+1. Add the following to the existing object and save
 ```javascript
 "postcssSorting.config": {
   "properties-order": "alphabetical",
@@ -34,8 +34,8 @@ VS Code identifier: `ryuta46.multi-command`
 Time to set up the key binding. 
 1. Press `F1`
 1. Type `Open Keyboard Shortcuts`
-1. Select `Preferences: Open Keyboard Shortcuts (JSON)` to open up your `keybindings.json` fil
-1. Add the following object to the existing array and save.
+1. Select `Preferences: Open Keyboard Shortcuts (JSON)` to open up your `keybindings.json` file
+1. Add the following object to the existing array and save
 ```javascript
 {
   "key": "ctrl+s",
@@ -50,7 +50,7 @@ This basically says when I save any CSS file using `Ctrl + S`, the multi-command
 
 ## But, why?
 Because Salesforce recommends having all properties listed alphabetically by convention.<br>
-And, because I __*hate*__ having warnings! 🙃🙃🙃
+And, because I don't like warnings! 😛
 
 I came across this [interesting article](https://jerrylowm.medium.com/alphabetize-your-css-properties-for-crying-out-loud-780eb1852153) on why it's better to have CSS properties sorted alphabetically.
 
